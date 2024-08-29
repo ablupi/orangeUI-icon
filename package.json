@@ -10,6 +10,10 @@
     "build-js": "node ./src/svg2js.js",
     "build-jsx": "node ./src/jsx-components.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ablupi/orangeUI-icon.git"
+  },
   "devDependencies": {
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vue/babel-plugin-jsx": "^1.2.2",
