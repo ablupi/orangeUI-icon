@@ -2,7 +2,7 @@
 import { stringify } from 'svgson'
 const App = (props, context) => {
   // const p = { ...props, ...context.attrs };
-  const { icon } = props
+  const { icon } = {...props}
   console.log('在基础组件内输出')
   console.log('props')
   console.log(props)
