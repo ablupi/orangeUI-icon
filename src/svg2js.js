@@ -53,7 +53,7 @@ fs.readdir(directoryPath, (err, files) => {
             escape: (res) => res.toString()
           }
         )
-        checkPath('./dist/icon/lib', `./dist/icon/lib/${fileNameFull}`, content)
+        checkPath('./icon/lib', `./dist/icon/lib/${fileNameFull}`, content)
         // fs.writeFile(`./dist/icon/lib/${fileNameFull}`, content, (err) => {
         //   if (err) throw err;
         // });
@@ -70,7 +70,7 @@ fs.readdir(directoryPath, (err, files) => {
             escape: (res) => res.toString()
           }
         )
-        checkPath('./dist/icon/es', `./dist/icon/es/${fileNameFull}`, content)
+        checkPath('./icon/es', `./dist/icon/es/${fileNameFull}`, content)
 
         // fs.writeFile(`./dist/icon/es/${fileNameFull}`, content, (err) => {
         //   if (err) throw err;
@@ -100,7 +100,7 @@ fs.readdir(directoryPath, (err, files) => {
             escape: (res) => res.toString()
           }
         )
-        checkPath('./dist/icon-vue', `./dist/icon-vue/${fileNameFull}`, content)
+        checkPath('./icon-vue', `./dist/icon-vue/${fileNameFull}`, content)
 
         // fs.writeFile(`./dist/icon-vue/${fileNameFull}`, content, (err) => {
         //   if (err) throw err;
