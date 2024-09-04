@@ -1,6 +1,6 @@
 import Jia from './icon-vue/Jia'
 
-
+console.log(Jia())
 // document.createElement('div')
 document.querySelector('#app').innerHTML = Jia()
 
