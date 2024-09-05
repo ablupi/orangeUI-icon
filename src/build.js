@@ -54,9 +54,6 @@ fs.readdir(directoryPath, (err, files) => {
           }
         )
         checkPath('./icon/lib', `./icon/lib/${fileNameFull}`, content)
-        // fs.writeFile(`./dist/icon/lib/${fileNameFull}`, content, (err) => {
-        //   if (err) throw err;
-        // });
 
         // es
         content = ejs.render(
@@ -71,10 +68,6 @@ fs.readdir(directoryPath, (err, files) => {
           }
         )
         checkPath('./icon/es', `./icon/es/${fileNameFull}`, content)
-
-        // fs.writeFile(`./dist/icon/es/${fileNameFull}`, content, (err) => {
-        //   if (err) throw err;
-        // });
 
         // 保存为jsx
         // content = ejs.render(
@@ -101,10 +94,6 @@ fs.readdir(directoryPath, (err, files) => {
           }
         )
         checkPath('./icon-vue', `./icon-vue/${fileNameFull}`, content)
-
-        // fs.writeFile(`./dist/icon-vue/${fileNameFull}`, content, (err) => {
-        //   if (err) throw err;
-        // });
       })
     })
   });
