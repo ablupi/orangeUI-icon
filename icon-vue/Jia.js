@@ -1,5 +1,5 @@
 import { createVNode as _createVNode } from "vue";
-import JiaSvg from "../src/icon-js/es/Jia";
+import JiaSvg from "../icon/es/Jia";
 
 const objectSpread = (target) => {
   return target.attributes

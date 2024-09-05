@@ -1,5 +1,5 @@
 import { createVNode as _createVNode } from "vue";
-import XuHangSvg from "../src/icon-js/es/XuHang";
+import XuHangSvg from "../icon/es/XuHang";
 
 const objectSpread = (target) => {
   return target.attributes
