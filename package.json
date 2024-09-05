@@ -7,9 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build-js": "node ./src/svg2js.js",
-    "build-jsx": "node ./src/jsx-components.js",
-    "ci": "node ./src/svg2js.js"
+    "build-js": "node ./src/build.js",
+    "ci": "node ./src/build.js"
   },
   "repository": {
     "type": "git",
