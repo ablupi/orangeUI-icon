@@ -1,6 +1,7 @@
 "use strict";
 // 此图标文件为自动生成
-var Jian = {
+Object.defineProperty(exports, "__esModule", { value: true });
+var Subtract  = {
   "name": "svg",
   "type": "element",
   "value": "",
@@ -30,4 +31,4 @@ var Jian = {
     }
   ]
 }
-export default Jian;
+exports.default = Subtract;

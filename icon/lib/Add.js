@@ -1,7 +1,7 @@
 "use strict";
 // 此图标文件为自动生成
 Object.defineProperty(exports, "__esModule", { value: true });
-var Jia  = {
+var Add  = {
   "name": "svg",
   "type": "element",
   "value": "",
@@ -42,4 +42,4 @@ var Jia  = {
     }
   ]
 }
-exports.default = Jia;
+exports.default = Add;

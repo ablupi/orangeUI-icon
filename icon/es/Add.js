@@ -1,6 +1,6 @@
 "use strict";
 // 此图标文件为自动生成
-var Jia = {
+var Add = {
   "name": "svg",
   "type": "element",
   "value": "",
@@ -41,4 +41,4 @@ var Jia = {
     }
   ]
 }
-export default Jia;
+export default Add;

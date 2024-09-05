@@ -1,5 +1,5 @@
 import { createVNode as _createVNode } from "vue";
-import JianSvg from "../icon/es/Jian";
+import ContinuationSvg from "../icon/es/Continuation";
 
 const objectSpread = (target) => {
   return target.attributes
@@ -15,8 +15,8 @@ const createSvgVNode = (icon) => {
   return _createVNode(icon.name, objectSpread(icon), content);
 }
 
-var Jian = function Jian(props, context) {
-  return createSvgVNode(JianSvg);
+var Continuation = function Continuation(props, context) {
+  return createSvgVNode(ContinuationSvg);
 };
 
-export default Jian;
+export default Continuation;

@@ -10,11 +10,11 @@ $ npm install orange-ui-icon
 
 ```html
 <script>
-import Jia from 'orange-ui-icon/icon/Jia'
+import Add from 'orange-ui-icon/icon-vue/Add'
 </script>
 ......
 <template>
-  <Jia></Jia>
+  <Add></Add>
 </template>
 ```
 

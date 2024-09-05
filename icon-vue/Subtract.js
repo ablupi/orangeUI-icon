@@ -1,5 +1,5 @@
 import { createVNode as _createVNode } from "vue";
-import XuHangSvg from "../icon/es/XuHang";
+import SubtractSvg from "../icon/es/Subtract";
 
 const objectSpread = (target) => {
   return target.attributes
@@ -15,8 +15,8 @@ const createSvgVNode = (icon) => {
   return _createVNode(icon.name, objectSpread(icon), content);
 }
 
-var XuHang = function XuHang(props, context) {
-  return createSvgVNode(XuHangSvg);
+var Subtract = function Subtract(props, context) {
+  return createSvgVNode(SubtractSvg);
 };
 
-export default XuHang;
+export default Subtract;

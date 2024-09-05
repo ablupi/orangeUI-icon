@@ -1,7 +1,6 @@
 "use strict";
 // 此图标文件为自动生成
-Object.defineProperty(exports, "__esModule", { value: true });
-var XuHang  = {
+var Continuation = {
   "name": "svg",
   "type": "element",
   "value": "",
@@ -86,4 +85,4 @@ var XuHang  = {
     }
   ]
 }
-exports.default = XuHang;
+export default Continuation;
