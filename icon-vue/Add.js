@@ -37,4 +37,7 @@ var Add = (props, context) => {
   return createSvgVNode(AddSvg, props);
 };
 
+Add.displayName = 'Add';
+Add.inheritAttrs = false;
+
 export default Add;
