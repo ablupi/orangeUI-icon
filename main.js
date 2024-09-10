@@ -9,8 +9,8 @@ import Add from './icon-vue/Add'
 //   template: `<div>{{ message }}</div>`
 // });
 // app.$mount('#app');
-// console.log(Test())
+console.log(Add())
 // document.createElement('div')
-document.querySelector('#app').appendChild(Add)
+// document.querySelector('#app').appendChild(Add)
 
 // document.querySelector('#app').innerHTML = Test()

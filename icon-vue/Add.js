@@ -1,6 +1,6 @@
 // 此图标文件为自动生成
 import { createVNode as _createVNode } from "vue";
-import AddSvg from "./icon-es";
+import AddSvg from "../icon/es/Add";
 
 let style = { height: '1rem', width: '1rem' }
 
