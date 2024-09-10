@@ -1,37 +1,33 @@
 // 此图标文件为自动生成
 import { createVNode as _createVNode } from "vue";
-import AddSvg from "../icon/es/Add";
+import AddSvg from "./icon-es";
 
-let style = {height: '1rem', width: '1rem', color: ''}
+let style = { height: '1rem', width: '1rem' }
 
 const objectSpread = (target, props) => {
-  return {...target.attributes, ...props}
+  return { ...target.attributes, ...props }
 }
 
 const createSvgVNode = (icon, props = {}) => {
   const content = []
+  
   if (props.style) {
-    for (const item of props.style.split(';')) {
-      if (!item) continue
-      Object.defineProperty(style, item.split(':')[0], {
-        value: item.split(':')[1].replace(/\s+/g, ''),
-      })
+    style = { ...style, ...props.style }  
+    if (style['font-size'] || style.fontSize) {
+      style.height = style['font-size'] || style.fontSize
+      style.width = style['font-size'] || style.fontSize
     }
-    if (icon.children && icon.children.length && icon.children.length>0) {
-      for (const child of icon.children) {
-        let pathProps = {}
-        if (child.name == 'path' && style.color) {
-          pathProps.fill = style.color
-        }
-        content.push(createSvgVNode(child, pathProps)) 
-      }
-    }
-    if (style['font-size']) {
-      style.height = style['font-size']
-      style.width = style['font-size']
-    }
-    props.style = `height:${style.height};width:${style.width};${props.style}`
   }
+  if (icon.children && icon.children.length && icon.children.length > 0) {
+    for (const child of icon.children) {
+      let pathProps = {}
+      if (child.name == 'path' && style.color) {
+        pathProps.fill = props.style.color
+      }
+      content.push(createSvgVNode(child, pathProps))
+    }
+  }
+  props.style = style
   return _createVNode(icon.name, objectSpread(icon, props), content);
 }
 

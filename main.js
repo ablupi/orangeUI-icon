@@ -1,8 +1,16 @@
 import Add from './icon-vue/Add'
-import Test from './src/test'
+// import Test from './src/test'
+// import Vue from 'vue'
 
-console.log(Add({style: 'font-size: 16px;color: #fff;'}))
+// const app = new Vue({
+//   data: {
+//     message: 'Hello from Vue!'
+//   },
+//   template: `<div>{{ message }}</div>`
+// });
+// app.$mount('#app');
+// console.log(Test())
 // document.createElement('div')
-// document.querySelector('#app').appendChild(Test())
+document.querySelector('#app').appendChild(Add)
 
-document.querySelector('#app').innerHTML = Test()
+// document.querySelector('#app').innerHTML = Test()
