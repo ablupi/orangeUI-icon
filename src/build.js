@@ -26,12 +26,18 @@ const ICON_VUE_ES_TEMPLATE = readFileSync(
   'utf8'
 );
 
+const DEFAULT_TEMPLATE = readFileSync(
+  resolve(__dirname, './ejs/default.js.ejs'),
+  'utf8'
+);
+
 const directoryPath = path.join(__dirname, './svg');
 
-fs.readdir(directoryPath, (err, files) => {
+fs.readdir(directoryPath,  (err, files) => {
   if (err) {
     return console.log('读取文件夹出错:', err);
   }
+  let defaultContent = ''
   files.forEach(file => {
     fs.readFile(path.join(directoryPath, file), 'utf8', (err, content) => {
       if (err) {
@@ -94,7 +100,20 @@ fs.readdir(directoryPath, (err, files) => {
           }
         )
         checkPath('./icon-vue', `./icon-vue/${fileNameFull}`, content)
+
+        // 生成index.js引入的缺省文件
+        
       })
+      defaultContent = defaultContent + '\n' + ejs.render(
+        DEFAULT_TEMPLATE,
+        {
+          svgIdentifier: fileName,
+        },
+        {
+          escape: (res) => res.toString()
+        }
+      )
+      checkPath('./icon-vue', `./icon-vue/index.js`, defaultContent)
     })
   });
 });

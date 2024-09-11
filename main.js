@@ -1,4 +1,5 @@
-import Add from './icon-vue/Add'
+// import Add from './icon-vue/Add'
+import { Add } from './index'
 // import Test from './src/test'
 // import Vue from 'vue'
 

@@ -32,8 +32,6 @@ const createSvgVNode = (icon, props = {}) => {
 }
 
 var Add = (props, context) => {
-  console.log('图标内测试')
-  console.log(props)
   return createSvgVNode(AddSvg, props);
 };
 
