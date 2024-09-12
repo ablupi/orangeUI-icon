@@ -30,6 +30,8 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org
-      - run: npm publish --access public
+      - name: Publish to GitHub Packages 
+        run: npm publish --access public
+        working-directory: ./package
         env:
           NODE_AUTH_TOKEN: ${{secrets.ORANGE_UI_ICON_CI}}
