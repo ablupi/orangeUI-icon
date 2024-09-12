@@ -6,7 +6,6 @@ import ejs from 'ejs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename);
-const baseUrl = './package'
 const ICON_LIB_TEMPLATE = readFileSync(
   resolve(__dirname, './ejs/icon-lib.js.ejs'),
   'utf8'
@@ -60,7 +59,7 @@ fs.readdir(directoryPath,  (err, files) => {
             escape: (res) => res.toString()
           }
         )
-        checkPath(`${baseUrl}/icon/lib`, `${baseUrl}/icon/lib/${fileNameFull}`, content)
+        checkPath('./icon/lib', `./icon/lib/${fileNameFull}`, content)
 
         // es
         content = ejs.render(
@@ -74,7 +73,7 @@ fs.readdir(directoryPath,  (err, files) => {
             escape: (res) => res.toString()
           }
         )
-        checkPath(`${baseUrl}/icon/es`, `${baseUrl}/icon/es/${fileNameFull}`, content)
+        checkPath('./icon/es', `./icon/es/${fileNameFull}`, content)
 
         // 保存为jsx
         // content = ejs.render(
@@ -100,7 +99,7 @@ fs.readdir(directoryPath,  (err, files) => {
             escape: (res) => res.toString()
           }
         )
-        checkPath(`${baseUrl}/icon-vue`, `${baseUrl}/icon-vue/${fileNameFull}`, content)
+        checkPath('./icon-vue', `./icon-vue/${fileNameFull}`, content)
 
         // 生成index.js引入的缺省文件
         
@@ -114,7 +113,7 @@ fs.readdir(directoryPath,  (err, files) => {
           escape: (res) => res.toString()
         }
       )
-      checkPath(`${baseUrl}/icon-vue`, `${baseUrl}/icon-vue/index.js`, defaultContent)
+      checkPath('./icon-vue', `./icon-vue/index.js`, defaultContent)
     })
   });
 });

@@ -1,4 +1,4 @@
-// 此图标文件为自动生成
+// 此文件为自动生成
 import { createVNode as _createVNode } from "vue";
 import ContinuationSvg from "../icon/es/Continuation";
 

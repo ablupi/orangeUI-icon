@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "build-js": "node ./src/build.js",
     "ci": "node ./src/build.js",
-    "test": "vite ./src/test.jsx"
+    "test": "node ./src/test.js"
   },
   "repository": {
     "type": "git",

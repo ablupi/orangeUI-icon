@@ -1,5 +1,5 @@
 "use strict";
-// 此图标文件为自动生成
+// 此文件为自动生成
 var Subtract = {
   "name": "svg",
   "type": "element",
