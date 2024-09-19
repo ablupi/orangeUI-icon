@@ -1,7 +1,6 @@
 {
   "name": "orange-ui-icon",
   "private": false,
-  "version": "0.2.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,10 +9,6 @@
     "build-js": "node ./src/build.js",
     "ci": "cd package",
     "test": "node ./src/test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:ablupi/orangeUI-icon.git"
   },
   "devDependencies": {
     "@vitejs/plugin-vue-jsx": "^4.0.",

@@ -15,6 +15,8 @@ import { Add } from 'orange-ui-icon'
 ......
 <template>
   <Add></Add>
+  <Add style="font-size: 24px;color: #ec9b64"></Add>
+  <Add :style="{ 'font-size': '24px', color: '#ec9b64' }"></Add>
 </template>
 ```
 

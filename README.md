@@ -10,11 +10,13 @@ $ npm install orange-ui-icon
 
 ```html
 <script>
-import Add from 'orange-ui-icon/icon-vue/Add'
+import { Add } from 'orange-ui-icon'
 </script>
 ......
 <template>
   <Add></Add>
+  <Add style="font-size: 24px;color: #ec9b64"></Add>
+  <Add :style="{ 'font-size': '24px', color: '#ec9b64' }"></Add>
 </template>
 ```
 
