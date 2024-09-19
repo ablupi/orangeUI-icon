@@ -1,6 +1,6 @@
 // 此文件为自动生成
 import { createVNode as _createVNode } from "vue";
-import SubtractSvg from "./Subtract";
+import SubtractSvg from "../icon/es/Subtract";
 
 let style = { height: '1rem', width: '1rem' }
 

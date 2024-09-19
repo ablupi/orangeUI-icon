@@ -1,6 +1,6 @@
 // 此文件为自动生成
 import { createVNode as _createVNode } from "vue";
-import ContinuationSvg from "./Continuation";
+import ContinuationSvg from "../icon/es/Continuation";
 
 let style = { height: '1rem', width: '1rem' }
 

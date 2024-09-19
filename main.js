@@ -1,5 +1,6 @@
 // import Add from './icon-vue/Add'
-import Icon from './package/index'
+// import {Add} from './icon-vue'
+import {Add} from './package/index'
 // import Test from './src/test'
 // import Vue from 'vue'
 
@@ -10,7 +11,7 @@ import Icon from './package/index'
 //   template: `<div>{{ message }}</div>`
 // });
 // app.$mount('#app');
-console.log(Icon())
+console.log(Add())
 // document.createElement('div')
 // document.querySelector('#app').appendChild(Add)
 
